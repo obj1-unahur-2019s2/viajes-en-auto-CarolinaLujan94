@@ -15,7 +15,7 @@ object teresa {
 
 object melina {
 	var property cliente
-	method valorPorKm() = cliente.valorPorKm - 3 }
+	method valorPorKm() = cliente.valorPorKm() - 3 }
 	
 	
 //remiseras
@@ -24,7 +24,7 @@ object melina {
     method valorPorViaje(cliente, km) = cliente.valorPorKm() * km }
 
 object gabriela {
-    method valorPorViaje(cliente, km) = cliente.valorPorKm * 1.2 } 
+    method valorPorViaje(cliente, km) = cliente.valorPorKm() * 1.2 } 
 
 object mariela {
 	method valorPorViaje(cliente, km) = 50.max(cliente.valorPorKm() * km) }
